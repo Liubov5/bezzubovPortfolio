@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" href="../materialize/css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        .btn {
+            margin-top: 100px;
+        }
+        .href{
+            color:darkgreen;
+        }
+        .modal{
+            background: black;
+            color:white;
+        }
+        .modal-footer{
+           
+        }
+        .div{
+             background: black;
+        }
+        .btn-flat{
+            color:darkgreen
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="position:absolute;top:0;left:0;z-index: 1; " class="green darken-1">
+        <div class="nav-wrapper ">
+            <a href="index.html" class="brand-logo ">Портфолио Беззубова Ильи</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="ind.html">О себе</a></li>
+                <li><a href="myGames.html">Мои работы</a></li>
+                <li><a href="about.html">Мои достижения</a></li>
+                <!-- Dropdown Trigger -->
+
+            </ul>
+        </div>
+    </nav>
+    <a class="waves-effect waves-green btn modal-trigger green darken-1" href="#modal1">Работы</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal ">
+        <div class="modal-content">
+            <h4>Игра на Phaser.io</h4>
+            <p>Для того чтобы создать игру на Phaser мне пришлось изучить фреймворк,как создавать Canvas. Мне потребовалось изучить всё содержимое сайта https://phaser.io. Для игры я использовал простейшую физику,где предметы отталкиваются друг от друга и тянутся к "земле"
+            Благодаря этому,я лучше изучил html,css и js.
+           <br> Здесь можно посмотреть готовую работу
+            <a href="phaserGame.html" class="href">Phaser Game</a>
+            <br>Здесь можно посмотреть код игры
+            <a href="phaserCod.html" class="href">Phaser Cod</a>
+            <br> Модели для Phaser
+            <a href="phaserModels.html" class="href">Phaser Models</a>
+            </p>
+        </div>
+        <div class="modal-footer div">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Выйти</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.modal').modal();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" href="../materialize/css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link type="text/css" href="dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin:0
+        }
+        
+        .r {
+            height: 20%;
+            width: 20%;
+            display: inline;
+        }
+        
+        .btn {
+            margin-left: 155px;
+        }
+        
+        .white-text {
+            color: white;
+        }
+        
+        .row {
+            display: inline;
+        }
+        
+        .qwe {
+            margin-top: 60px;
+        }
+        
+        .carousel {
+            margin-top: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav style="position:absolute;top:0;left:0;z-index: 1; " class="green darken-1">
+        <div class="nav-wrapper ">
+            <a href="index.html" class="brand-logo ">Портфолио Беззубова Ильи</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="ind.html">О себе</a></li>
+                <li><a href="myGames.html">Мои работы</a></li>
+                <li><a href="about.html">Мои достижения</a></li>
+                <!-- Dropdown Trigger -->
+
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="%20(7).png"></a>
+        <a class="carousel-item" href="#two!"><img src="(11).png"></a>
+        <a class="carousel-item" href="#three!"><img src="(5).png"></a>
+
+        <a class="carousel-item" href="#five!"><img src="(6).png"></a>
+        <a class="carousel-item" href="#five!"><img src="(8).png"></a>
+        <a class="carousel-item" href="#five!"><img src="(9).png"></a>
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function() {
+            $('.materialboxed').materialbox();
+        });
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+
+    </script>
+</body>
+
+</html>

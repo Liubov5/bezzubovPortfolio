@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" href="../materialize/css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .qw {
+            border: 3px solid darkgreen;
+            opacity: 0.7;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            margin: 0;
+        }
+        
+        h4 {
+            color: white
+        }
+        
+        .q {
+            font-size: 25px;
+        }
+        
+        .a {
+            font-size: 25px;
+            color: white;
+        }
+        
+        .r {
+            color: white;
+            margin-left: 25px;
+        }
+        
+        .ocnova{
+            height: :500px;
+            width:500px;
+        }
+        .toy{
+            margin-top:200px;
+        }
+        .tooltipped{
+            margin-top:100px;
+        }
+    </style>
+</head>
+
+
+<nav style="position:absolute;top:0;left:0;z-index: 1; " class="green darken-1">
+    <div class="nav-wrapper ">
+        <a href="index.html" class="brand-logo ">Портфолио Беззубова Ильи</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="ind.html">О себе</a></li>
+            <li><a href="myGames.html">Мои работы</a></li>
+            <li><a href="about.html">Мои достижения</a></li>
+            <!-- Dropdown Trigger -->
+
+        </ul>
+    </div>
+</nav>
+<div class="ocnova">
+    <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer green darken-1 toy">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Средства связи</h5>
+                <li>
+                    <p><i class="material-icons tiny">email</i> Контактная почта:</p>
+                    <p class="r"> blackjack22890@mail.ru</p>
+                </li>
+                <li>
+                    <p><i class="material-icons tiny">call</i> Контактная телефон:</p>
+                    <p class="r">8 924 865 92-46</p>
+                </li>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+<body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.js"></script>
+    <script>
+        $('.collapsible').collapsible('open', 0);
+        $('.collapsible').collapsible('close', 0);
+        $('.collapsible').collapsible('destroy');
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $('.slider').slider();
+        })
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+
+        $(".dropdown-button").dropdown();
+        $(document).ready(function() {
+            $('.tooltipped').tooltip();
+        });
+
+    </script>
+</body>
+
+</html>
